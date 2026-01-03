@@ -274,7 +274,7 @@ std::function<int(int)> func = [](int x) { return x * x; };
 
 int result = func(5);  // result = 25
 
------------------------------------------------------------
+// ----------------------------------------------------------- //
 
 #include <functional>
 #include <iostream>
@@ -318,7 +318,8 @@ int main() {
     applyAndPrint([](int x) { return x * x; }, 5); 
 }
 
----------------------------------------------------------------
+// --------------------------------------------------------------- //
+
 // alternative way
 template<typename Func>
 void applyAndPrint(Func func, int value) {
